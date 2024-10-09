@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.custom-scrollbar {
+    overflow-y: scroll;
+    height: 200px;
+}
+.custom-scrollbar::-webkit-scrollbar {
+    width: 20px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00aeff), to(#a68eff));
+    box-shadow: inset 2px 2px 2px rgba(174, 23, 23, 0.25), inset -2px -2px 2px rgba(155, 68, 190, 0.25);
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #fff;
+    background: none;
+}
+body {
+    background: url("/assets/background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+h1 {
+    color: #008cff; 
+    background-image: radial-gradient(ellipse, rgba(255, 255, 255, 0.575) 11%, rgb(255, 255, 255) 73%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    padding: 1%;
+    margin: 1%;
+    margin-top: 3%;
+    margin-left: 2.8%;
+}
+h1:hover {
+    cursor: default;
+}
+.nav-bar {
+    display: flex;
+    margin-right: 5%;
+    width: 35%;
+    height: 75%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    box-shadow: 20px 0 50px #008cff, -20px 0 50px #e100ff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    color: rgb(169, 165, 165);
+    gap: 50px;
+    font-size: 25px;
+}
+li {
+    transition: all 0.2s ease-out;
+}
+li:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.about-the-developer p {
+    display: inline-block;
+    color: white;
+    align-items: left;
+    text-align: left;
+    padding: 10px;
+    margin-left: 55px;
+    margin-right: 30px;
+    font-size: 1.8vh;
+}
+h2 {
+    color: white;
+    align-items: left;
+    text-align: left;
+    padding: 10px;
+    margin-left: 55px;
+    margin-right: 85px;
+    margin-top: 15px;
+    font-size: 4vh;
+    font-weight: 550;
+}
+.main {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 3%;
+    gap: 5%;
+    vertical-align: top;
+}
+.about-the-developer {
+    display: inline-block;
+    width: 60%;
+    height: 73vh;
+}
+.projects {
+    display: inline-block;
+    width: 40%;
+    height: 73vh;
+    padding-bottom: 1%;
+}
+h1 {
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    border-radius: 1000px;
+    box-shadow: 20px 0 50px #008cff, -20px 0 50px #e100ff;
+}
+.projects, .about-the-developer {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 20px 0 50px #008cff, -20px 0 50px #e100ff;
+}
+button {
+    padding: 1em 2em;
+    background-color: #161a20;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-out;
+}
+button::after {
+    content: "";
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+    z-index: -1;
+}
+button:hover {
+    z-index: 0;
+    box-shadow: 40px 0 100px #008cff, -40px 0 100px #e100ff;
+    cursor: pointer;
+}
+
+.projects-list {
+    display: flexbox;
+    height: 86%;
+    flex-direction: row;
+    overflow: auto;
+    border-radius: 30px;
+}
+.project {
+    display: flex;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: space-between;
+}
+.project:hover{
+    cursor: pointer;
+}
+h2:hover {
+    cursor: default;
+}
+h3 {
+    color: white;
+    align-items: left;
+    text-align: left;
+    font-weight: 550;
+    margin-bottom: 3px;
+    font-size: 2.5vh;
+}
+.my-projects-header {
+    margin-left: 15px;
+}
+.project-lists-separator {
+    background-color: white;
+    height: 2px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+.project-description {
+    color: white;
+    align-items: left;
+    text-align: left;
+    padding-right: 10px;
+    font-size: 1.7vh;
+}
+.project-screenshots {
+    display: inline-block;
+    height: 150px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 10px 0 20px #008cff, -10px 0 20px #e100ff;  
+}
+#calculator-img {
+    background: url("assets/projects_screenshots/calculator.png") no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+#dojoweather-img {
+    background: url("assets/projects_screenshots/dojoweather.png") no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+#personal-picture {
+    height: 30vh;
+    border-radius: 50%;
+    box-shadow: 10px 0 20px #008cff, -10px 0 20px #e100ff;
+    background: url("assets/personal_picture.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-left: 300px;
+    margin-right: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#personal-picture::after {
+    opacity: calc(0.8);
+    content: "";
+    margin-right: 300px;
+    position: absolute;
+    height: 103%;
+    width: 103%;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+    z-index: -1;
+}
+.about-me-p-img {
+    display: flex;
+    justify-content:flex-end
+}
+#download-cv-button-div {
+    display: block;
+    margin-top: 18%;
+    margin-right: 7%;
+}
+#download-cv {
+    width: 100%;
+    font-size: 20px;
+}
+.right-side-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#copyright-label {
+    color: white;
+    transition: all 0.2s ease-out;
+    opacity: 1;
+}
+#copyright-label:hover {
+    color: rgb(223, 214, 214);
+}
+.footer {
+    display: flex;
+    background-color: black;
+    height: 5vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
